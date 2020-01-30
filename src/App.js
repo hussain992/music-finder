@@ -9,16 +9,17 @@ import Home from './components/home'
 import DetailsPage from './components/detailsPage';
 
 function App() {
+  
   return (
     <Router>
       <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/detailsPage">
-            <DetailsPage />
-          </Route>
-        </Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/detailsPage">
+          <DetailsPage />
+        </Route>
+      </Switch>
     </Router>
   );
 }
